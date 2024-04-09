@@ -1,0 +1,14 @@
+// Tip: 修改配置后，需重启一下vscode
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+
+    },
+    "module": "node16",
+    "target": "es6"
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

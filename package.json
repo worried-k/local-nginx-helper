@@ -1,0 +1,18 @@
+{
+  "name": "local-nginx-helper",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "nginx": "node ./build/nginx/index.js",
+    "host": "node ./build/host/index.js",
+    "root-ssl-crt": "openssl x509 -req -days 365 -in ./modules/root-ssl/local-private-ca.csr -signkey ./modules/root-ssl/local-private-ca.key -out ./modules/root-ssl/local-private-ca.crt"
+  },
+  "devDependencies": {
+    "@belllabs/eslint-config-drips-legacy": "^0.3.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-html": "^7.1.0"
+  },
+  "dependencies": {
+    "shelljs": "^0.8.5"
+  }
+}
