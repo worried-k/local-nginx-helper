@@ -90,7 +90,8 @@ module.exports = ({
 
 `
       return
-    } else if (!/^[0-9]+$/.test(port)) {
+    }
+    if (!/^[0-9]+$/.test(port)) {
       // 若配置的不是端口号则取消配置
       return
     }
